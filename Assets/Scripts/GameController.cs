@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class GameController : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class GameController : MonoBehaviour
         dictionaryThing.Add(Stage.End, secondEmail);
         textMesh = GetComponent<TMPro.TextMeshProUGUI>();
         textMesh.text = dictionaryThing[currentStage];
+        
         
     }
 
